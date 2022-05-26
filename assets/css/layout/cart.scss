@@ -1,0 +1,157 @@
+
+#cart {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+
+    img {
+      width: 70px;
+    }
+
+    td {
+      text-align: center;
+
+      &:nth-child(1) {
+        width: 100px;
+      }
+
+      &:nth-child(2) {
+        width: 150px;
+      }
+
+      &:nth-child(3) {
+        width: 250px;
+      }
+      
+      &:nth-child(4) ,
+      &:nth-child(5) ,
+      &:nth-child(6) {
+        width: 150px;
+      }
+
+      &:nth-child(5) {
+        input {
+          width: 70px;
+          padding: 10px 5px 10px 15px;
+
+        }
+      }
+    }
+
+    thead {
+      border: 1px solid #e2e9e1;
+      border-left: none;
+      border-right: none;
+
+      td {
+        font-weight: 700;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding:  18px 0;
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          padding-top: 15px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+#cart-add {
+  @include flex-layout($flex-wrap: wrap);
+
+  #coupon {
+    width: 50%;
+    margin-bottom: 30px;
+
+    h3 {
+      padding-bottom: 15px;
+    }
+
+    input {
+      padding: 10px 20px;
+      outline: none;
+      width: 60%;
+      margin-right: 10px;
+      border: 1px solid $border-color-h;
+    }
+
+    button {
+      background-color: $btn-bg-hv-cl;
+      color: $white;
+      padding: 12px 20px;
+    }
+  }
+
+  #subtotal {
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+
+    h3 {
+      padding-bottom: 15px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-right: 10px; 
+      border: 1px solid $border-color-h;
+      margin-bottom: 15px;
+
+      td {
+        padding: 6px;
+      }
+    }
+
+    button {
+      background-color: $btn-bg-hv-cl;
+      color: $white;
+      padding: 12px 20px;
+    }
+  }
+}
+
+@media (max-width: 447px) {
+  #cart {
+    overflow-x: auto;
+  }
+
+  #cart-add {
+    flex-direction: column;
+
+    #coupon {
+      width: 100%;
+    }
+
+    #subtotal {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 447px) {
+  #cart {
+    overflow-x: auto;
+  }
+
+  #cart-add {
+    flex-direction: column;
+
+    #coupon {
+      width: 100%;
+    }
+
+    #subtotal {
+      width: 100%;
+    }
+  }
+}

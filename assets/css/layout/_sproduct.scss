@@ -1,0 +1,105 @@
+#proDetails {
+  @include flex-layout;
+
+  .single-pro-image {
+    width: 45%;
+    margin-right: 50px;
+
+    .small-img-group {
+      display: flex;
+      justify-content: space-between;
+
+      .small-img-col {
+        flex-basis: 24%;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .single-pro-details {
+    width: 50%;
+    padding-top: 30px;
+
+    h4 {
+      padding: 40px 0 20px 0;
+    }
+
+    h2 {
+      font-size: 26px;
+    }
+
+    select {
+      display: block;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+      font-size: 18px;
+      width: 50%;
+      text-transform: uppercase;
+      cursor: pointer;
+
+      &::-ms-expand {
+        display: none;
+      }
+
+      option {
+        cursor: pointer !important;
+      }
+    }
+
+    input {
+      @include button-default;
+      background-color: #fff;
+      @include border-radius(4px);
+      border: 1px solid $border-gray;
+      outline: none;
+      @include transition-value(0.3s);
+      box-shadow: none;
+
+      &:focus {
+        outline: none;
+        box-shadow: 0px 0px 10px #0000003d;
+      }
+    }
+
+    button {
+      background-color: $btn-bg-hv-cl;
+      color: $white;
+    }
+
+    p {
+      line-height: 25px;
+    }
+  }
+}
+
+// Responsive Design
+
+@media (max-width: 447px) {
+  #proDetails {
+    display: flex;
+    flex-direction: column;
+
+    .single-pro-image {
+      width: 100%;
+      margin-right: 0px;
+    }
+
+    .single-pro-details {
+      width: 100%;
+
+      h4 {
+        padding: 13px 0 4px 0;
+      }
+
+      select {
+        width: 16em;
+      }
+
+      input {
+          padding: 11px 15px;
+          margin-bottom: 9px;
+          width: 18em;
+      }
+    }
+  }
+}

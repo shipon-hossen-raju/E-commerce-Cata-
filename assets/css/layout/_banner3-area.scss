@@ -1,0 +1,37 @@
+#banner3 {
+  @include flex-layout(space-between,unset, wrap);
+  padding: 0 80px;
+
+  .banner-box {
+    @include banner-center-img("../img/banner/b7.jpg", 32%, 30vh);
+    padding: 20px;
+    margin-bottom: 20px;
+    min-width: 360px;
+
+    &:nth-child(2) {
+      background-image: url('../../img/banner/b4.jpg');
+    }
+    
+    &:nth-child(3) {
+      background-image: url('../../img/banner/b18.jpg');
+    }
+
+    h2 {
+      color: $white;
+      font: {
+        weight: 900;
+        size: 22px;
+      }
+      text-transform: uppercase;
+    }
+
+    h3 {
+      color: #ec544e;
+      font: {
+        weight: 800;
+        size: 15px;
+      }
+      text-transform: capitalize;
+    }
+  }
+}

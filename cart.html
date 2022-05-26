@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> E-commerec tutorial </title>
+
+  <!-- font-awesome icons -->
+  <link rel="stylesheet" href="./assets/plugins/font-awesome/css/all.min.css">
+
+  <!-- main link -->
+  <link rel="stylesheet" href="./assets/css/compile scss/cart.css">
+</head>
+
+<body>
+<!-- header area start -->
+  <header id="header">
+    <a href="#">
+      <img src="./assets/img/logo.png" alt="logo">
+    </a>
+
+    <div>
+      <ul id="navbar">
+        <li><a href="./index.html"> Home </a></li>
+        <li><a href="./shop.html"> shop </a></li>
+        <li><a href="./blog.html"> blog </a></li>
+        <li><a href="./about.html"> about </a></li>
+        <li><a href="./contact.html"> contact </a></li>
+        <li><a class="active" href="#" id="lg-bag"><i class="fa fa-shopping-bag"></i></a></li>
+        <a href="#" id="close"><i class="fas fa-times"></i></a>
+      </ul>
+    </div> 
+    <div id="mobile">
+      <a href="#"><i class="fa fa-shopping-bag"></i></a>
+      <i id="bar" class="fas fa-outdent"></i>
+    </div>
+  </header>
+<!-- header area end -->
+<!-- page header start -->
+  <section id="page-header">
+
+    <h2>#let's_talk</h2>
+    <p> leave a message , we love to hear form you  </p>
+  </section>
+<!-- page header end -->
+<!-- cart area start -->
+  <section id="cart" class="section-p1">
+    <table>
+      <thead>
+        <tr>
+          <td> Remove </td>
+          <td> Image </td>
+          <td> Product </td>
+          <td> Price </td>
+          <td> Quantity </td>
+          <td> Subtotal </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+          <td><img src="./assets/img/products/f1.jpg" alt="products 1"></td>
+          <td>Cartoon Astronaut T-Shirts </td>
+          <td> $118.19 </td>
+          <td><input type="number" value="1"></td>
+          <td> $118.19 </td>
+        </tr>
+        <tr>
+          <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+          <td><img src="./assets/img/products/f3.jpg" alt="products 1"></td>
+          <td>Cartoon Astronaut T-Shirts </td>
+          <td> $118.19 </td>
+          <td><input type="number" value="1"></td>
+          <td> $118.19 </td>
+        </tr>
+        <tr>
+          <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+          <td><img src="./assets/img/products/f2.jpg" alt="products 1"></td>
+          <td>Cartoon Astronaut T-Shirts </td>
+          <td> $118.19 </td>
+          <td><input type="number" value="1"></td>
+          <td> $118.19 </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+<!-- cart area end -->
+<!-- cart add start-->
+  <section id="cart-add" class="section-p1">
+    <div id="coupon">
+      <h3>Apply Coupon
+        <div>
+          <input type="text" placeholder="Enter Your Coupon">
+          <button class="normal">Apply</button>
+        </div>
+      </h3>
+    </div>
+    <div id="subtotal">
+      <h3>Cart Totals</h3>
+      <table>
+        <tr>
+          <td>Cart Subtotal </td>
+          <td> $ 335 </td>
+        </tr>
+        <tr>
+          <td> Shipping </td>
+          <td> Free </td>
+        </tr>
+        <tr>
+          <td><strong>Total</strong></td>
+          <td><strong>$ 335</strong></td>
+        </tr>
+      </table>
+      <button class="normal">Proceed to checkout</button>
+    </div>
+  </section>
+<!-- cart add end -->
+<!-- footer start -->
+  <footer id="footer" class="section-p1">
+    <div class="col">
+      <img class="logo" src="./assets/img/logo.png" alt="">
+      <h4> contact </h4>
+      <p><strong>address : </strong> Dhalachar , aminpur , Pabna , Rajshahi, Dhaka , Bangladesh </p>
+      <p><strong>hours : </strong> 10:00 - 18:00, Mon - sat </p>
+      <div class="follow">
+        <h4> follow us </h4>
+        <div class="icon">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-pinterest-p"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <h4> about </h4>
+      <a href="#"> about us </a>
+      <a href="#"> delivery policy </a>
+      <a href="#"> terms & conditions </a>
+      <a href="#"> contact us </a>
+    </div>
+    <div class="col">
+      <h4> account </h4>
+      <a href="#"> sign in </a>
+      <a href="#"> view cart </a>
+      <a href="#"> my wishlist </a>
+      <a href="#"> track my order </a>
+      <a href="#"> help </a>
+    </div>
+    <div class="col install">
+      <h4> install app </h4>
+      <p> from app store ar google play </p>
+      <div class="row">
+        <img src="./assets/img/pay/app.jpg" alt="app store">
+        <img src="./assets/img/pay/play.jpg" alt="google play store">
+      </div>
+      <p> secured payment gateways </p>
+      <img src="./assets/img/pay/pay.png" alt="payment img" >
+    </div>
+    <div class="copyright">
+      <p>&copy; 2022, Programmer Shipon - HTML CSS E-commearce </p>
+    </div>
+  </footer>
+  <!-- footer end -->
+
+  <!-- main javascript file link -->
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

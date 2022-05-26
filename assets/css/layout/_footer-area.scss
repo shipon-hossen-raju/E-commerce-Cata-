@@ -1,0 +1,72 @@
+#footer {
+  @include flex-layout($flex-wrap: wrap);
+
+  .col {
+    @include flex-layout($align-items: flex-start, $justify-content: unset);
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    .logo {
+      margin-bottom: 30px;
+    }
+
+    h4 {
+      font-size: 16px;
+      padding-bottom: 20px;
+    }
+
+    p {
+      font-size: 14px;
+      margin: 0 0 8px 0;
+      text-transform: capitalize;
+    }
+
+    a {
+      font-size: 14px;
+      text-decoration: none;
+      color: $heading-color;
+      margin-bottom: 10px;
+      text-transform: capitalize;
+
+      &:hover {
+        color: $btn-bg-hv-cl;
+      }
+    }
+
+    .follow {
+      margin-top: 20px;
+
+      i {
+        color: $pragraph-color;
+        padding-right: 4px;
+        cursor: pointer;
+
+        &:hover {
+          color: $btn-bg-hv-cl;
+        }
+      }
+    }
+
+    &.install {
+      .row {
+        @include flex-layout;
+
+        img {
+          border: 1px solid $border-color-s;
+          @include border-radius(6px);
+          margin-right: 5px;
+        }
+      }
+
+      img {
+        margin: 10px 0 15px 0;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .copyright {
+    width: 100%;
+    text-align: center;
+  }
+}
