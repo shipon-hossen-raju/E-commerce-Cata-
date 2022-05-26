@@ -1,0 +1,35 @@
+#hero {
+  background-image: url("../../img/hero4.png");
+  height: 90vh;
+  width: 100%;
+  background-position: top 25% right 0;
+  background-size: cover;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  h4 {
+    padding-bottom: 15px;
+    text-transform: capitalize;
+  }
+
+  h1 {
+    color: $text-color;
+  }
+
+  button {
+    background-image: url("../../img/button.png");
+    background-color: transparent;
+    color: $text-color;
+    padding: 14px 80px 14px 65px;
+    display: inline-block;
+    text-transform: capitalize;
+    border: none;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+  }
+}

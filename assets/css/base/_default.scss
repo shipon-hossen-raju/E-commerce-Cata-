@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'League Spartan', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: $heading-color;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: $heading-color;
+  text-transform: capitalize;
+}
+
+h4 {
+  font-size: 20px;
+  color: $heading-color;
+  text-transform: capitalize;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+
+p {
+  font-size: 16px;
+  color: $pragraph-color;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+body {
+  width: 100%;
+}
+
+button.normal {
+  font: {
+    size: 16px;
+    weight: 600;
+  }
+  text: {
+    transform: capitalize;
+    align: center;
+  }
+  padding: 14px 28px;
+  color: $black;
+  background-color: #fff;
+  @include border-radius(4px);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  @include transition-value(0.2s);
+  box-shadow: 2px 2px 1px #0000003d;
+}
+
+button.white {
+  font: {
+    size: 14px;
+    weight: 600;
+  }
+  text: {
+    transform: capitalize;
+    align: center;
+  }
+  padding: 11px 18px;
+  color: $white;
+  background-color: transparent;
+  @include border-radius(2px);
+  cursor: pointer;
+  border: 1px solid $white;
+  outline: none;
+  @include transition-value(0.2s);
+  box-shadow: 2px 2px 1px #0000003d;
+}

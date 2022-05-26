@@ -1,0 +1,52 @@
+#sm-banner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .banner-box {
+    @include banner-center-img("../../img/banner/b17.jpg", 49%, 50vh);
+    min-width: 580px;
+    align-items: flex-start;
+    text-align: unset;
+    padding: 35px;
+
+    &:nth-child(2) {
+      background-image: url('../../img/banner/b10.jpg');
+    }
+
+    h4 {
+      color: $white;
+
+      font: {
+        size: 30px;
+        weight: 300;
+      }
+    }
+
+    h2 {
+      color: $white;
+
+      font: {
+        size: 28px;
+        weight: 800;
+      }
+    }
+
+    span {
+      color: $white;
+
+      font: {
+        size: 17px;
+        weight: 500;
+      }
+
+      padding-bottom: 15px;
+    }
+
+    &:hover {
+      button {
+        background-color: $btn-bg-hv-cl;
+      }
+    }
+  }
+}

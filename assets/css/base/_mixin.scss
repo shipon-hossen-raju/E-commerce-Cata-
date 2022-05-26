@@ -1,0 +1,83 @@
+@mixin flex-layout($justify-content: space-between, $align-items: unset, $flex-wrap: nowrap) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-wrap: $flex-wrap;
+}
+
+@mixin transition-value($duration: 3s) {
+  transition: $duration ease-in-out;
+  -webkit-transition: $duration ease-in-out;
+  -moz-transition: $duration ease-in-out;
+  -ms-transition: $duration ease-in-out;
+  -o-transition: $duration ease-in-out;
+}
+
+@mixin border-radius($radius-value: 3px) {
+  border-radius: $radius-value;
+  -webkit-border-radius: $radius-value;
+  -moz-border-radius: $radius-value;
+  -ms-border-radius: $radius-value;
+  -o-border-radius: $radius-value;
+}
+
+@mixin banner-center-img($img-url, $width: 100%, $height: 40vh, $bg-position: center, $repeat:no-repeat, $display: flex, $flex-direction: column, $text-align: center, $flex-wrap: wrap, $align-items: center, $justify-content: center) {
+  background: {
+    image: url($img-url);
+    size: cover;
+    position: $bg-position;
+    repeat: $repeat;
+    color: #041e42;
+  }
+
+  width: $width;
+  height: $height;
+  display: $display;
+  align-items: $align-items;
+  flex-direction: $flex-direction;
+  text-align: $text-align;
+  flex-wrap: $flex-wrap;
+  justify-content: $justify-content;
+}
+
+@mixin button-default($font-size: 16px, $weight: 600, $tt: capitalize, $ta: justify, $padn: 14px 28px) {
+  font: {
+    size: $font-size;
+    weight: $weight;
+  }
+
+  text: {
+    transform: $tt;
+    align: $ta;
+  }
+
+  padding: $padn;
+  color: $black;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 10px #0000007c;
+}
+
+@mixin pageNation {
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    background-color: $btn-bg-hv-cl;
+    padding: 15px 20px;
+    @include border-radius(4px);
+    color: $white;
+    font-weight: 600;
+    @include transition-value(.3s);
+
+    &:hover {
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 38%);
+    }
+
+    i {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+}

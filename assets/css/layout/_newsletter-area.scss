@@ -1,0 +1,58 @@
+#newsletter {
+  @include banner-center-img($img-url: "../img/banner/b14.jpg", $height: auto);
+  flex-direction: row;
+  justify-content: space-between;
+
+  .newsText {
+    h4 {
+      font: {
+        size: 22px;
+        weight: 700;
+      }
+      text: {
+        transform: capitalize;
+        align: left;
+      }
+      color: $white;
+      line-height: 2em;
+    }
+
+    p {
+      font: {
+        size: 16px;
+        weight: 600;
+    }
+
+      color: #818ea0;
+
+      span {
+        color: $span-color;
+      }
+    }
+  }
+
+  .form {
+    @include flex-layout($justify-content: center, $align-items: center);
+
+    input {
+      height: 3.125rem;
+      padding: 0 1.25em;
+      font-size: 16px;
+      width: 100%;
+      @include border-radius(4px);
+      outline: none;
+      text-transform: capitalize;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    
+    button {
+      background-color: $btn-bg-hv-cl;
+      color: $white;
+      white-space: nowrap;
+      height: 3.125rem;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}
